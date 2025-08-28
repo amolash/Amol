@@ -48,6 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'shopping.middleware.SourceTrackingMiddleware',
+    'shopping.middleware.SourceTrackingSecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'shoppingsite.urls'
